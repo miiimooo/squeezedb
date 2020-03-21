@@ -1,0 +1,10 @@
+description: 'remove undesired revisions for an entity type and bundle given'
+options:
+    entity_type: 'entity type to process'
+    bundle: 'bundle to process'
+    retain: 'number of revision to retain'
+    info: 'add verbose output'
+messages:
+    success: 'all undesired revisions have been removed'
+    error: 'something went wrong :('
+    notfound: 'no undesired revisions have been found'

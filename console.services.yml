@@ -1,0 +1,21 @@
+services:
+  squeezedb.orphan_paragraph:
+    class: Drupal\squeezedb\Command\OrphanParagraphCommand
+    arguments: ['@entity_type.manager','@database']
+    tags:
+      - { name: drupal.command }
+  squeezedb.undesired_revision:
+    class: Drupal\squeezedb\Command\UndesiredRevisionCommand
+    arguments: ['@entity_type.manager']
+    tags:
+      - { name: drupal.command }
+  squeezedb.unpublished:
+    class: Drupal\squeezedb\Command\UnpublishedCommand
+    arguments: ['@entity_type.manager']
+    tags:
+      - { name: drupal.command }
+  squeezedb.remove_truncate_table:
+    class: Drupal\squeezedb\Command\TruncateTableCommand
+    arguments: ['@database']
+    tags:
+      - { name: drupal.command }

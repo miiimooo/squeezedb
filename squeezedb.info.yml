@@ -1,0 +1,5 @@
+name: 'squeezedb'
+type: module
+description: 'keep your development database in sharp'
+core: 8.x
+package: 'Development'

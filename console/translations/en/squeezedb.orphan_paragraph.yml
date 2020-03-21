@@ -1,0 +1,7 @@
+description: 'remove orphan paragraphs'
+options:
+    info: 'add verbose output'
+messages:
+    success: 'all orphan pagraphs have been removed'
+    error: 'something went wrong :('
+    notfound: 'no orphan pararaphs found'

@@ -1,0 +1,24 @@
+<?php
+
+/**
+ * @file
+ * Contains squeezedb.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function squeezedb_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the squeezedb module.
+    case 'help.page.squeezedb':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('keep your development database in sharp') . '</p>';
+      return $output;
+
+    default:
+  }
+}

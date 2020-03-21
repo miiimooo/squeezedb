@@ -1,0 +1,7 @@
+description: 'truncate database table'
+options:
+    table: 'table to be truncated'
+messages:
+    success: 'table has been truncated'
+    error: 'something went wrong :('
+    notfound: 'table not found'
