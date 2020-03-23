@@ -83,7 +83,7 @@ class UndesiredRevisionCommand extends Command
         $retain = $input->getOption('retain');
         $info = $input->getOption('info');
 
-        $storage = \Drupal::entityTypeManager()->getStorage($entity_type);
+        $storage = $this->entityTypeManager->getStorage($entity_type);
         $query = $storage
             ->getQuery()
             ->condition('type', $bundle)
